@@ -53,7 +53,7 @@ class mySDWAN:
     # create for the ops of NSX4 tasks
     # required requests
 
-    def __init__(self, vManage="10.10.20.90", username = "admin", passcode="C1sco12345", gs="GoldenConfigMcD.xlsx"):
+    def __init__(self, vManage="10.10.20.90", username = "admin", passcode="C1sco12345", gs="GoldenSheet.xlsx"):
         self.devices = {}
         self.s = requests.Session()
         self.s.verify = False
