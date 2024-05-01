@@ -7,7 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: CAS-Agent-Pool-Python #agent pool
+  demands:
+  - agent.name -equals Ubuntu-VM #self-hosted agent
 strategy:
   matrix:
     Python37:
